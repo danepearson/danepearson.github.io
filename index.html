@@ -273,6 +273,13 @@
       text-decoration-color: var(--text);
     }
 
+    /* In the left column the button sits under the social icons. It is an
+       inline-level box, so .profile-col's text-align:center centers it; this
+       rule only adds the gap above. */
+    .profile-col .cv-button {
+      margin-top: 1.5rem;
+    }
+
     .cv-button {
       display: inline-flex;    /* inline so it only takes up as much width as
                                   its content; flex so the icon and the text
@@ -479,6 +486,16 @@
           </a>
 
         </nav>
+
+        <a class="cv-button" href="cv.pdf" download>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <path d="M7 10l5 5 5-5"/>
+            <path d="M12 15V3"/>
+          </svg>
+          Download CV
+        </a>
       </aside>
 
       <!-- ---------- RIGHT COLUMN ---------- -->
@@ -499,16 +516,6 @@
           estimate adjusted mortality rate ratios. I am applying to PhD programs in
           biostatistics and statistics.
         </p>
-
-        <a class="cv-button" href="cv.pdf" download>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-            <path d="M7 10l5 5 5-5"/>
-            <path d="M12 15V3"/>
-          </svg>
-          Download CV
-        </a>
 
         <!-- ---------- Research interests ---------- -->
         <div class="section">
