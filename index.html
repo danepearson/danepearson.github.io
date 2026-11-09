@@ -21,7 +21,7 @@
   -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Dane Pearson</title> 
+  <title>Dane</title> <!-- <<< EDIT: shows in the browser tab -->
 
   <!-- Loads the Inter typeface from Google Fonts. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -353,6 +353,12 @@
       margin-top: 0.1rem;
     }
 
+    .entry-minors {
+      font-size: 0.89rem;
+      color: var(--text);   /* full contrast, same as the degree line */
+      margin-top: 0.1rem;
+    }
+
     .entry-note {
       font-size: 0.89rem;
       color: var(--text-muted);
@@ -419,11 +425,11 @@
       <!-- ---------- LEFT COLUMN ---------- -->
       <aside class="profile-col">
 
-        <img class="avatar" src="profile.jpg" alt="Photo of Dane Pearson">
+        <img class="avatar" src="profile.jpg" alt="Photo of Dane">
 
-        <h1 class="name">Dane Pearson</h1>                              <!-- <<< EDIT -->
-        <p class="role">Undergraduate Research Assistant</p>                   <!-- <<< EDIT -->
-        <p class="org">University of California, Santa Cruz</p>  <!-- <<< EDIT -->
+        <h1 class="name">Dane Pearson</h1>        
+        <p class="role">Research Assistant</p>             
+        <p class="org">University of California, Santa Cruz</p>  
 
         <nav class="social">
 
@@ -449,7 +455,7 @@
             </svg>
           </a>
 
-          <a href="https://www.linkedin.com/in/dane-pearson" aria-label="LinkedIn" title="LinkedIn"
+          <a href="https://www.linkedin.com/in/dane-pearson/" aria-label="LinkedIn" title="LinkedIn"
              target="_blank" rel="noopener">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
               <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67
@@ -467,13 +473,10 @@
       <section class="about-col">
         <h2>About Me</h2>
 
-        <!--
-          <<< EDIT: 
-        -->
         <p class="bio">
           I am a 2026 graduate of the University of California, Santa Cruz, where I
           studied cognitive science with minors in computer science and statistics. I
-          currently work in Dr. Hyun&rsquo;s lab, building the data pipeline that
+          currently work in Prof. Sangwon Hyun&rsquo;s lab, building the data pipeline that
           links ocean conditions to phytoplankton flow cytometry measurements. I&rsquo;m
           interested in statistical methods for messy, incomplete real-world data, and I
           recently extended a COVID-19 mortality analysis using mixed models and multiple
@@ -481,7 +484,6 @@
           and statistics.
         </p>
 
-        <!-- <<< EDIT:  -->
         <a class="cv-button" href="cv.pdf" download>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -495,7 +497,7 @@
         <!-- ---------- Research interests ---------- -->
         <div class="section">
           <h3>Research Interests</h3>
-          <!-- <<< EDIT:  -->
+          <!-- <<< EDIT: -->
           <ul class="plain-list">
             <li>Mixture models for ecological count data</li>
             <li>Bayesian hierarchical modeling</li>
@@ -509,11 +511,10 @@
           <div>
             <h3>Education</h3>
 
-            <!-- <<< EDIT: copy the whole .entry block to add a degree -->
             <div class="entry">
-              <div class="entry-title">B.S. in Cognitive Science</div>
+              <div class="entry-title">B.S. in Cognitive Science, 2026</div>
+              <div class="entry-minors">Minors in Statistics and Computer Science</div>
               <div class="entry-sub">University of California, Santa Cruz</div>
-              <div class="entry-date">2026 · Minors in Computer Science and Statistics</div>
             </div>
 
             <div class="section">
@@ -533,24 +534,29 @@
           <div>
             <h3>Research &amp; Experience</h3>
 
-            
             <div class="entry">
-              <div class="entry-title">Research Assistant, Statistics Lab</div>
-              <div class="entry-sub">University of California, Santa Cruz</div>
-              <div class="entry-date">2026 – present</div>
+              <div class="entry-title">Undergraduate Researcher</div>
+              <div class="entry-sub">Department of Statistics, UC Santa Cruz</div>
+              <div class="entry-date">February 2026 &ndash; present · Advisor: Prof. Sangwon Hyun</div>
               <div class="entry-note">
-                Built a pipeline colocalizing environmental covariates with
-                phytoplankton cytogram data across five North Pacific cruises.
+                Built the covariate data foundation for a study of how ocean conditions
+                drive phytoplankton populations, matching environmental measurements to
+                research-cruise tracks and screening 12,800 candidate variables for a
+                sparse mixture-of-regressions model (flowmix). Scaled the workflow
+                across 88 expeditions with parallel cluster jobs.
               </div>
             </div>
 
             <div class="entry">
               <div class="entry-title">Database Operations Intern</div>
               <div class="entry-sub">Siemens</div>
-              <div class="entry-date">May – August 2026</div>
+              <div class="entry-date">May &ndash; August 2026</div>
               <div class="entry-note">
-                Developed a multivariate anomaly detection system for
-                production database monitoring.
+                Built a Python pipeline consolidating 3,500+ AWS server and database
+                records into a self-updating dashboard, cutting records of unknown
+                environment from 2,300+ to under 20. Also developed an internal web app
+                generating automated root-cause analysis from ticket data for a
+                12-person team.
               </div>
             </div>
           </div>
