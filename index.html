@@ -261,6 +261,18 @@
       max-width: 68ch;
     }
 
+    .bio a {
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 0.18em;
+      text-decoration-color: var(--text-faint);
+      transition: text-decoration-color 0.15s ease;
+    }
+    
+    .bio a:hover {
+      text-decoration-color: var(--text);
+    }
+
     .cv-button {
       display: inline-flex;    /* inline so it only takes up as much width as
                                   its content; flex so the icon and the text
