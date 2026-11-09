@@ -3,20 +3,7 @@
   ============================================================================
   PERSONAL LANDING PAGE
   ============================================================================
-  Everything (structure, styling, and the dark-mode toggle) lives in this one
-  file. Drop it at the root of your <username>.github.io repository.
-
-  EVERY SPOT YOU NEED TO EDIT IS MARKED WITH:  <<< EDIT
-  Search the file for "EDIT" to find them all.
-
-  Files you need to add next to this one:
-    profile.jpg   your headshot (square image works best, it gets cropped
-                  into a circle)
-    cv.pdf        your CV, if you want the Download CV button to work
-    .nojekyll     an EMPTY file with that exact name. It tells GitHub Pages
-                  to serve this HTML as-is instead of running it through
-                  Jekyll.
-  ============================================================================
+  
 -->
 
 <!--
@@ -34,7 +21,7 @@
   -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Dane</title> <!-- <<< EDIT: shows in the browser tab -->
+  <title>Dane Pearson</title> 
 
   <!-- Loads the Inter typeface from Google Fonts. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -331,15 +318,20 @@
 
     .plain-list li {
       color: var(--text-muted);
+      font-size: 0.89rem;   /* matches .entry-note below */
       margin-bottom: 0.45rem;
-      padding-left: 0.95rem;
+      padding-left: 1.1rem;
       position: relative;
     }
 
     .plain-list li::before {
-      content: "–";
+      content: "•";          /* bullet character; use "–" for an en dash */
       position: absolute;
       left: 0;
+      /* The raw bullet glyph is a little large and sits slightly high next
+         to Inter's lowercase letters, so it gets scaled down and nudged. */
+      font-size: 1.05em;
+      line-height: 1.5;
       color: var(--text-faint);
     }
 
@@ -365,11 +357,6 @@
       font-size: 0.89rem;
       color: var(--text-muted);
       margin-top: 0.4rem;
-    }
-
-    .coursework {
-      font-size: 0.89rem;
-      color: var(--text-muted);
     }
 
     /* ======================================================================
@@ -408,7 +395,7 @@
 
   <!-- ========================= TOP BAR ========================= -->
   <header class="topbar">
-    <a class="topbar-name" href="/">Dane</a> <!-- <<< EDIT: your name -->
+    <a class="topbar-name" href="/">Dane Pearson</a> 
 
     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light and dark mode">
       <!-- Sun icon: shown in dark mode -->
@@ -432,19 +419,15 @@
       <!-- ---------- LEFT COLUMN ---------- -->
       <aside class="profile-col">
 
-        <!-- <<< EDIT: save your headshot as profile.jpg next to this file.
-             The alt text is read aloud by screen readers. -->
-        <img class="avatar" src="profile.jpg" alt="Photo of Dane">
+        <img class="avatar" src="profile.jpg" alt="Photo of Dane Pearson">
 
-        <h1 class="name">Dane</h1>                              <!-- <<< EDIT -->
-        <p class="role">Research Assistant</p>                   <!-- <<< EDIT -->
+        <h1 class="name">Dane Pearson</h1>                              <!-- <<< EDIT -->
+        <p class="role">Undergraduate Research Assistant</p>                   <!-- <<< EDIT -->
         <p class="org">University of California, Santa Cruz</p>  <!-- <<< EDIT -->
 
         <nav class="social">
 
-          <!-- <<< EDIT: replace with your email address. The "mailto:"
-               prefix is what makes it open a mail client. -->
-          <a href="mailto:you@example.com" aria-label="Email" title="Email">
+          <a href="mailto:daapears@ucsc.edu" aria-label="Email" title="Email">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="4" width="20" height="16" rx="2"/>
@@ -452,8 +435,7 @@
             </svg>
           </a>
 
-          <!-- <<< EDIT: your GitHub profile URL -->
-          <a href="https://github.com/YOUR-USERNAME" aria-label="GitHub" title="GitHub"
+          <a href="https://github.com/danepearson" aria-label="GitHub" title="GitHub"
              target="_blank" rel="noopener">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56
@@ -467,8 +449,7 @@
             </svg>
           </a>
 
-          <!-- <<< EDIT: your LinkedIn profile URL -->
-          <a href="https://www.linkedin.com/in/YOUR-HANDLE" aria-label="LinkedIn" title="LinkedIn"
+          <a href="https://www.linkedin.com/in/dane-pearson" aria-label="LinkedIn" title="LinkedIn"
              target="_blank" rel="noopener">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
               <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67
@@ -487,17 +468,17 @@
         <h2>About Me</h2>
 
         <!--
-          <<< EDIT: THIS IS A PLACEHOLDER I WROTE, NOT YOUR WORDS.
-          Rewrite it before you publish. Two to four sentences is the right
-          length for this layout.
+          <<< EDIT: 
         -->
         <p class="bio">
-          I am a recent graduate of the University of California, Santa Cruz, where I
+          I am a 2026 graduate of the University of California, Santa Cruz, where I
           studied cognitive science with minors in computer science and statistics. I
-          currently work in a statistics lab applying statistical modeling to
-          oceanographic data, with a focus on phytoplankton population dynamics. My
-          work sits at the intersection of applied statistics and environmental
-          science, mostly in R and Python.
+          currently work in Dr. Hyun&rsquo;s lab, building the data pipeline that
+          links ocean conditions to phytoplankton flow cytometry measurements. I&rsquo;m
+          interested in statistical methods for messy, incomplete real-world data, and I
+          recently extended a COVID-19 mortality analysis using mixed models and multiple
+          imputation of suppressed counts. I am applying to PhD programs in biostatistics
+          and statistics.
         </p>
 
         <!-- <<< EDIT: save your CV as cv.pdf next to this file.
@@ -537,14 +518,18 @@
               <div class="entry-date">2026 · Minors in Computer Science and Statistics</div>
             </div>
 
-            <!-- <<< EDIT: list only courses you have actually taken.
-                 Delete this block if you would rather leave it off. -->
+            <!-- <<< EDIT: list only courses you have actually taken. -->
             <div class="section">
               <h3>Relevant Coursework</h3>
-              <p class="coursework">
-                Real Analysis · Linear Algebra · Probability Theory ·
-                Mathematical Statistics · Regression Analysis
-              </p>
+              <ul class="plain-list">
+                <li>Real Analysis</li>
+                <li>Linear Algebra</li>
+                <li>Probability Theory</li>
+                <li>Classical and Bayesian Inference</li>
+                <li>Statistical Data Analysis in R</li>
+                <li>Machine Learning &amp; Deep Learning</li>
+                <li>Calculus I-III</li>
+              </ul>
             </div>
           </div>
 
